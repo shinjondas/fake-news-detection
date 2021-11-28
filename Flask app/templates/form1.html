@@ -4,17 +4,20 @@
       <meta charset="utf-8">
       <title>Fake News Detector</title>
       <link rel="stylesheet" href="{{ url_for('static',filename='styles/style.css') }}">
+      <script src="https://use.fontawesome.com/1dcd51e910.js"></script>
    </head>
    <body>
     <form action="{{ url_for('predict')}}" method="POST">
   
       <div class="segment">
         <h2>Fake News Detector</h2>
+        <p>Fake news, one of the biggest new-age problems has the potential to mould opinions and influence decisions.</p>
+        <b>Enter news in the textarea below to check for Fake News!</b>
       </div>
       
       <label>
         
-        <textarea id="w3review" name="name" rows="4" cols="180" required="required" placeholder="Enter the news here."></textarea>
+        <textarea id="w3review" name="name" rows="10" cols="200" required="required" placeholder="Enter the news here."></textarea>
       </label>
       
       <button class="red" type="submit"><i class="icon ion-md-lock"></i> Check</button>
@@ -23,9 +26,9 @@
 
       <!-- {{ prediction }} -->
       {% if prediction == ['fake']%}
-        <h3> Looks Fake </h3>
+        <center><h3><i class="fa fa-exclamation-triangle" aria-hidden="true" style="color:red"></i>&nbsp;It's probably fake!</h3></center>
       {% elif prediction == ['true']%}
-        <h3><b>Looks Real</b></h2>
+        <center><h3><i class="fa fa-check-circle-o" aria-hidden="true" style="color:green"></i>&nbsp;Seems Real to Me</h3></center>
       {% endif %}
       
       
