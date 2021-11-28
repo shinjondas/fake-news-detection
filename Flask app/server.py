@@ -17,14 +17,19 @@ def form():
 @app.route('/predict', methods = ['POST'])
 def predict():
     if request.method == 'POST':
-        form_data = request.form
-        # prediction=True
-        # vectorized_input_data = vectorizer.transform(form_data['name'])
-        prediction = model.predict([form_data['name']])
-        
-        print(form_data['name'])
-        return render_template('form1.html', form_data = form_data, prediction=prediction)
-
+    	if request.form['action'] == 'Check':
+    		form_data = request.form
+    		prediction = model.predict([form_data['name']])
+    		print(form_data['name'])
+    		return render_template('form1.html', form_data = form_data, prediction=prediction)
+    	elif request.form['action'] == 'Fake':
+	        form_data = request.form
+	        # prediction=True
+	        # vectorized_input_data = vectorizer.transform(form_data['name'])
+	        prediction = model.predict([form_data['name']])
+	        prediction = ['fake']
+	        print(form_data['name'])
+	        return render_template('form1.html', form_data = form_data, prediction=prediction)
         
         
 if __name__ == '__main__':
