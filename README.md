@@ -1,6 +1,6 @@
 
 # Fake News Detection
-[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)<br>
 The primary objective of this project is simple, flagging fake news. This is done utilising various Deep Learning algorithms and generic classifiers. The best performing algorithm is then deployed using Flask.
 
 
