@@ -11,6 +11,7 @@ The primary objective of this project is simple, flagging fake news. This is don
 - [Decision Tree](https://towardsdatascience.com/decision-trees-in-machine-learning-641b9c4e8052)
 - [ANN](https://www.datasciencecentral.com/profiles/blogs/artificial-neural-network-ann-in-machine-learning) (Artificial Neural Network)
 - [LSTM](https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21) (Long Short Term Memory)
+- Hybrid CNN-LSTM
 ## Dataset
 
 The [dataset](https://github.com/shinjondas/fake-news-detection/tree/main/data) consists of   23481 fake news articles and 21417 true news articles which can be combined to create the training dataset for the algorithm. 
