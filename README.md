@@ -4,13 +4,6 @@
 The primary objective of this project is simple, flagging fake news. This is done utilising various Deep Learning algorithms and generic classifiers. The best performing algorithm is then deployed using Flask.
 
 
-## Authors
-
-- [@shinjondas](https://github.com/shinjondas/)
-- [@akshatvid](https://github.com/akshatvid)
-- [@akashshukla09](https://github.com/AkashShukla09)
-
-
 ## Models Used
 
 - [Logistic Regression](https://towardsdatascience.com/logistic-regression-detailed-overview-46c4da4303bc)
